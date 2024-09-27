@@ -1,0 +1,87 @@
+#include<iostream>
+using namespace std;
+
+class cricketers{
+  private:               // private is access modifieer
+                  // which helps in restricting the access of the data members
+                  // this modifier is used to restric the access of data members outside the class
+     string name;        // these are properties or data members
+     int matches;
+     int runs;
+     int centuries;
+     
+
+
+public:    // public is access modifier 
+           // with help of this we can access the data members any where(outside the class )
+
+string getName(){    // using getter we can access the private data members
+   return name;
+}
+
+int getMatches(){
+  return matches;
+}
+
+int getRuns(){
+  return runs;
+}
+int getCenturies(){
+  return centuries;
+}
+
+
+
+// using setter to set the values of the private data members
+void setName(string n){
+  name=n;
+}
+
+void setMatches(int m){
+  matches=m;
+}
+void setRuns(int r){
+  runs=r;
+}
+void setCenturies(int c){
+  centuries=c;
+}
+
+
+};
+
+
+
+int main(){
+
+cricketers kholi;
+  // kholi.name="Virat Kohli";
+  // kholi.runs=10000;
+  // kholi.matches= 100;
+  // kholi.wickets=10;
+
+
+
+  kholi.setName("Kholi");
+  cout<<"Name of the cricketer is "<<kholi.getName()<<endl;
+
+  kholi.setMatches(295);
+  cout<<"Number of matches is "<<kholi.getMatches()<<endl;
+
+  kholi.setRuns(13905);
+  cout<<"Total runs are "<<kholi.getRuns()<<endl;
+
+  kholi.setCenturies(49);
+  cout<<"Number of centuries "<<kholi.getCenturies()<<endl;
+  
+  cricketers dhoni;
+  // dhoni.name="MS Dhoni"; 
+  // dhoni.matches=125;
+  // dhoni.runs=15000;
+  // dhoni.wickets=25;
+
+ 
+
+
+  return 0;
+}
