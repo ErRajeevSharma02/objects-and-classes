@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+class cricketers{
+  public:
+     string name;
+     int matches;
+     int runs;
+     int centuries;
+     int wickets;
+      
+
+
+
+};
+
+
+
+int main(){
+
+cricketers kholi;
+  kholi.name="Virat Kohli";
+  kholi.runs=10000;
+  kholi.matches= 100;
+  kholi.wickets=10;
+
+  cricketers dhoni;
+  dhoni.name="MS Dhoni"; 
+  dhoni.matches=125;
+  dhoni.runs=15000;
+  dhoni.wickets=25;
+
+  cout<<"The runs are scored by Kholi is : "<<kholi.runs<<endl;
+  cout<<"The runs are scored by dhoni is : "<<dhoni.runs<<endl;
+  
+
+
+  return 0;
+}
