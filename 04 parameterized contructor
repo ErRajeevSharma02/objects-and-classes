@@ -1,0 +1,66 @@
+#include<iostream>
+using namespace std;
+
+class cricketers{
+  private:               // private is access modifieer
+                  // which helps in restricting the access of the data members
+                  // this modifier is used to restric the access of data members outside the class
+     string name;        // these are properties or data members
+     int matches;
+     int runs;
+     int centuries;
+     
+
+
+public:    // public is access modifier 
+           // with help of this we can access the data members any where(outside the class )
+
+string getName(){    // using getter we can access the private data members
+   return name;
+}
+
+int getMatches(){
+  return matches;
+}
+
+int getRuns(){
+  return runs;
+}
+int getCenturies(){
+  return centuries;
+}
+
+cricketers(string n, int r){
+  this-> name=n;
+  this-> runs=r;
+  
+}
+void print(){
+  cout<<"Name: "<<name<<endl;
+  cout<<"runs: "<<runs<<endl;
+}
+
+
+
+// using setter to set the values of the private data members
+
+
+};
+
+
+
+int main(){
+
+
+
+
+  // using contructor in parameterised form
+  cricketers kholi("Kholi",9850);
+  kholi.print();
+  
+  
+ 
+
+
+  return 0;
+}
